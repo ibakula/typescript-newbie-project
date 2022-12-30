@@ -8,6 +8,7 @@
     "strictNullChecks": true,
     "removeComments": true,
     "target": "ES5",
+    "module": "CommonJS",
     // Settings for finding type declarations
     "typeRoots": [ "./node/@types", "./types" ],
     // JavaScript-support settings
