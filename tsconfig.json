@@ -7,16 +7,18 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "removeComments": true,
-    "target": "ES5",
+    "target": "ES6",
     "module": "CommonJS",
     "esModuleInterop": true,
+    "jsx": "react-jsx",
     // Settings for finding type declarations
-    "typeRoots": [ "./node/@types", "./types" ],
+    "typeRoots": [ "./types", "./node_modules/@types" ],
     // JavaScript-support settings
     "allowJs": true,
-    "declaration": true,
-    "declarationDir": "./types",
-    "declarationMap": true,
+    // Please note for 3 lines below: not using any .js in this project
+    "declaration": false, 
+    //"declarationDir": "./types",
+    "declarationMap": false, // note: not using any .js in this project
     // Setting below is only for generating .d.ts declaration files
     "emitDeclarationOnly": false
   }
