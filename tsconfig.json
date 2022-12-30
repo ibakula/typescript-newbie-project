@@ -9,6 +9,7 @@
     "removeComments": true,
     "target": "ES5",
     "module": "CommonJS",
+    "esModuleInterop": true,
     // Settings for finding type declarations
     "typeRoots": [ "./node/@types", "./types" ],
     // JavaScript-support settings
