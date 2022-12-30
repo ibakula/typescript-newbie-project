@@ -1,0 +1,17 @@
+{
+  "name": "basic-typescript-project",
+  "version": "0.0.0",
+  "description": "This is just a newbie typescript project.",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Bakula",
+  "license": "ISC"
+}

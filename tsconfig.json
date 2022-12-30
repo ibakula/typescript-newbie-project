@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    // Compilation settings
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "target": "ES5",
+    // Settings for finding type declarations
+    "typeRoots": [ "./node/@types", "./types" ],
+    // JavaScript-support settings
+    "allowJs": true,
+    "declaration": true,
+    "declarationDir": "./types",
+    "declarationMap": true,
+    // Setting below is only for generating .d.ts declaration files
+    "emitDeclarationOnly": false
+  }
+}
