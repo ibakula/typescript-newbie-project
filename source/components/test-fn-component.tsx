@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useLayoutEffect, ReactEventHandler } from 'react';
+import { useState, useCallback, useEffect, useLayoutEffect, ReactEventHandler } from 'react';
 
 type Props = {
 }

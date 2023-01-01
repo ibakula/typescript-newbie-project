@@ -1,7 +1,7 @@
-import React from "react";
+import { Component } from "react";
 import TestFNComponent from "./test-fn-component";
 
-class TestComponent extends React.Component {
+class TestComponent extends Component {
   render() {
     return (
       <TestFNComponent />
