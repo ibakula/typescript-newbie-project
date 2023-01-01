@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
-    "outDir": "./dist",
+    //"outDir": "./dist",
+    "outFile": "./dist/build.js",
     // Compilation settings
     "noEmitOnError": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "removeComments": true,
     "target": "ES6",
-    "module": "CommonJS",
+    //"module": "CommonJS",
     "esModuleInterop": true,
     "jsx": "react-jsx",
     // Settings for finding type declarations
