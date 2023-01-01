@@ -9,7 +9,7 @@
     "strictNullChecks": true,
     "removeComments": true,
     "target": "ES6",
-    //"module": "CommonJS",
+    "module": "AMD",
     "esModuleInterop": true,
     "jsx": "react-jsx",
     // Settings for finding type declarations
