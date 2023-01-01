@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
-    //"outDir": "./dist",
-    "outFile": "./dist/build.js",
+    "outDir": "./dist",
     // Compilation settings
     "noEmitOnError": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "removeComments": true,
     "target": "ES6",
-    "module": "AMD",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "jsx": "react-jsx",
+    "moduleResolution": "Node",
     // Settings for finding type declarations
     "typeRoots": [ "./types", "./node_modules/@types" ],
     // JavaScript-support settings
