@@ -14,6 +14,7 @@
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "moduleResolution": "Node",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     // Settings for finding type declarations
     "typeRoots": [ "./types", "./node_modules/@types" ],
     // JavaScript-support settings
