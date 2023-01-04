@@ -9,9 +9,9 @@ export default function TestFNComponent(props: Props) {
   let [ val, setVal ] = useState<null | String>(null);
   
   let changeHandler: React.FormEventHandler = useCallback(function(e) {
-    e.preventDefault();
     setVal(() => ((e.target as HTMLElement).firstElementChild as HTMLInputElement).value);
-  },[ val ])
+    e.preventDefault(); // prevent page refresh and loss of state
+  }, [ props ]);
 
   useEffect(function() {
     console.log(`value: ${val}`);
