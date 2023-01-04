@@ -89,20 +89,26 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
-        type: "asset",
+        type: 'asset',
         generator: {
           outputPath: 'static/',
+          //publicPath: '\./static/'
         }
       }
     ]
+  },
+  devServer: {
+    liveReload: true,
+    watchFiles: ["*"],
+    port: 3000
   },
   resolve: {
     extensions: ['.tsx', '.ts', ".js"]
   },
   output: {
     filename: 'bundle.js',
-    sourceMapFilename: "[name]-[id].js.map",
     publicPath: '\./static/',
+    sourceMapFilename: "[name]-[id].js.map",
     path: path.resolve(__dirname, 'build'),
     clean: true
   }
