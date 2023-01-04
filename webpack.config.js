@@ -91,7 +91,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
         type: "asset",
         generator: {
-          outputPath: 'static/'
+          outputPath: 'static/',
         }
       }
     ]
@@ -102,6 +102,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     sourceMapFilename: "[name]-[id].js.map",
+    publicPath: '\./static/',
     path: path.resolve(__dirname, 'build'),
     clean: true
   }
