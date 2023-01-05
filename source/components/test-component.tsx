@@ -4,7 +4,10 @@ import TestFNComponent from "./test-fn-component";
 class TestComponent extends Component {
   render() {
     return (
-      <TestFNComponent />
+      <>
+        <TestFNComponent />
+        <TestFNComponent />
+      </>
     );
   }
 }

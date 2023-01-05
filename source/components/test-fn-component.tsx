@@ -8,13 +8,14 @@ type Props = {
 export default function TestFNComponent(props: Props) {
   let [ val, setVal ] = useState<null | String>(null);
   
-  let changeHandler: React.FormEventHandler = useCallback(function(e) {
+  const changeHandler: React.FormEventHandler = useCallback(function(e) {
     setVal(() => ((e.target as HTMLElement).firstElementChild as HTMLInputElement).value);
     e.preventDefault(); // prevent page refresh and loss of state
-  }, [ props ]);
+  }, [ true ]);
 
   useEffect(function() {
     console.log(`value: ${val}`);
+    setTimeout(() => console.log(`timeout: ${val}`), 5000);
   });
 
   return (
