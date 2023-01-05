@@ -5,7 +5,7 @@ const path = require('path');
 const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 const app = express();
-const config = require('./webpack.config.js');
+const config = require('./webpack.config.js')({development:true});
 
 Object.assign(config, {
   watch: true,

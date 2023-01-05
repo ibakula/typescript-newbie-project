@@ -5,8 +5,9 @@
   "main": "./source/index.ts",
   "scripts": {
     "compile": "tsc",
-    "compile --clean": "tsc --build --clean",
-    "build": "webpack && cp -r ./source/index.html* ./build & wait $!",
+    "de-compile": "tsc --build --clean",
+    "build": "webpack --env production && cp -r ./source/index.html* ./build & wait $!",
+    "testbuild": "webpack --env development && cp -r ./source/index.html* ./build & wait $!",
     "cleanup": "rm -r ./build/*",
     "start": "nodemon server.js"
   },
@@ -32,6 +33,7 @@
     "style-loader": "^3.3.1",
     "ts-loader": "^9.4.2",
     "tsc": "^2.0.4",
+    "typescript": "^4.9.4",
     "typescript-plugin-css-modules": "^4.1.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
