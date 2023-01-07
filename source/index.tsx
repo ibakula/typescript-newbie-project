@@ -4,4 +4,4 @@ import TestComponent from './components/test-component';
 const container = document.getElementById("root") as Element;
 const root = createRoot(container);
 
-root.render(<TestComponent />);
+root.render(<TestComponent requiredProp="test" />);
