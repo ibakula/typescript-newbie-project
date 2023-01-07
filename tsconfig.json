@@ -24,12 +24,5 @@
     //"declarationMap": true, // note: not using any .js in this project
     // Setting below is only for generating .d.ts declaration files
     //"emitDeclarationOnly": true
-  },
-  "ts-node": {
-    "transpileOnly": true,
-    "files": true,
-    "compilerOptions": {
-      "rootDir": "./source"
-    }
   }
 }
