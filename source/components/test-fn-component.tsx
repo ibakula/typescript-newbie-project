@@ -16,15 +16,11 @@ export default function TestFNComponent(props: Props & { requiredProp?: string; 
 
   useEffect(function() {
     console.log(`value: ${val}`);
-    const timeoutId = setTimeout(() => console.log(`timeout: ${val}`), 5000);
-    return function () {
-      clearTimeout(timeoutId);
-    };
   });
 
   return (
     <form method="post" onSubmit={changeHandler}>
-      <input className={`${style.mySpecialClass} aTestClass`} type="text" placeholder="Test data" value={'requiredProp' in props ? props.requiredProp : "No required prop supplied"} />
+      <input className={`${style.mySpecialClass} aTestClass`} type="text" placeholder="Test data" defaultValue={'requiredProp' in props ? props.requiredProp : "No required prop supplied"} />
     </form>
   );
 };
