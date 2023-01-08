@@ -1,7 +1,6 @@
 import { create, act } from 'react-test-renderer';
 import TestFNComponent from './components/test-fn-component';
 import TestComponent from './components/test-component';
-import { TypeofTypeAnnotation } from '@babel/types';
 
 test('Test component changes after prop update', function () {
   jest.useFakeTimers();
