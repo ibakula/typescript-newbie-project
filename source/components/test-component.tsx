@@ -1,5 +1,6 @@
 import { Component } from "react";
 import TestFNComponent from "./test-fn-component";
+import DragTestComponent from "./drag-test";
 
 type OptionalProps = {
   [propName: string]: object | Function | string | number;
@@ -21,6 +22,7 @@ export default class TestComponent extends Component<Props, State> {
       <>
         <TestFNComponent {...this.props} />
         <TestFNComponent />
+        <DragTestComponent />
       </>
     );
   }
