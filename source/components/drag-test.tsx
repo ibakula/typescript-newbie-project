@@ -50,7 +50,7 @@ export default class DragTestComponent extends Component<Props, State> {
           {(!this.state.dropped) && <img src={img} onDragStart={this.handleDragStart} onDragEnd={this.handleDragEnd} draggable />}
         </div>
         <div
-          dangerouslySetInnerHTML={isDroppedObj(this.state?.dropped) ? this.state.dropped : ({__html: ""} as droppedStateObject)} 
+          dangerouslySetInnerHTML={isDroppedObj(this.state.dropped) ? this.state.dropped : ({__html: ""} as droppedStateObject)} 
           className={style.container} 
           onDragOver={this.handleDragOver} 
           onDrop={this.handleDrop} 
