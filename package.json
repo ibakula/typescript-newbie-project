@@ -6,8 +6,8 @@
   "scripts": {
     "compile": "tsc",
     "de-compile": "tsc --build --clean",
-    "build": "webpack --env production && cp -r ./source/index.html* ./build & wait $!",
-    "testbuild": "webpack --env development && cp -r ./source/index.html* ./build & wait $!",
+    "build": "webpack --env production && cp -r ./source/index.html ./build & wait $!",
+    "testbuild": "webpack --env development && cp -r ./source/index.html ./build & wait $!",
     "cleanup": "rm -r ./build/*",
     "start": "nodemon server.js",
     "test": "jest"
