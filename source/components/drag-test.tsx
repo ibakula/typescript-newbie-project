@@ -28,12 +28,12 @@ export default class DragTestComponent extends Component<Props, State> {
     this.setState({dragged: e.target as Node});
   }
 
-  handleDragEnd: React.DragEventHandler = (e) => {
+  handleDragEnd: React.DragEventHandler = e => {
     e.preventDefault();
     this.setState({dragged: null});
   }
 
-  handleDrop: React.DragEventHandler = (e) => {
+  handleDrop: React.DragEventHandler = e => {
     e.preventDefault();
     this.setState({dragged: null, dropped: { __html: (this.state.dragged as HTMLImageElement).outerHTML }});
   }
