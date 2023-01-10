@@ -3,8 +3,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = function(env) {
   let config = {
-    mode: ('production' in env && env.production ? "production" : "development"),
-    devtool: (this.mode === "development" ? "source-map" : false),
+    mode: env.development ? "development" : "production",
+    devtool: (env.development ? "source-map" : false),
     entry: './source/index.tsx',
     optimization: {
       splitChunks: {

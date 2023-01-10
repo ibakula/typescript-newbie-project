@@ -19,6 +19,7 @@
     "typeRoots": [ "./types", "./node_modules/@types" ],
     // JavaScript-support settings
     "allowJs": true,
+    "sourceMap": true,
     //"declaration": true, 
     //"declarationDir": "./types",
     //"declarationMap": true, // note: not using any .js in this project
