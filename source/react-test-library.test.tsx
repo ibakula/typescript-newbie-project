@@ -21,7 +21,7 @@ test("Tryout of mocking a module", async function() {
 });
 
 test("Test tools from test library with some components", async function () {
-  expect.assertions(1);
+  expect.assertions(2);
   render(<TestFNComponent />);
   const [ textField ] = await screen.findAllByRole("textbox") as HTMLInputElement[];
   expect(textField.value).toBe("No required prop supplied");
