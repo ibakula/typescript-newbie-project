@@ -5,7 +5,8 @@ As I was learning HTML, CSS, React, TypeScript, Webpack, Git, JavaScript in dept
 
 # Usage
 To run a development server:
-* npm run test - runs a development server on **localhost:3000**
+* npm run start - starts a devserver on **http://localhost:3000**
+* npm run test - runs tests by using .test.tsx? files
 * npm run build - compiles a project into the **"projectRootDir/build"** folder
 
 # Features
