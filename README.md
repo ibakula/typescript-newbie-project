@@ -4,6 +4,7 @@ Welcome to the TypeScript/Webpack/Jest "newbie" project
 * This project contains three components written in React just as a test for this specific project.
 * As I was learning HTML, CSS, React, TypeScript, Webpack, Git, JavaScript in depth and being completely new to typescript but wishing to use TypeScript with React, I decided to create a project which uses TypeScript for typechecking and compilation, Webpack for bundling of relative and non-relative modules/libraries provided through the npm packages and Jest for writing tests.
 * The goal of the project was thus to configure all of the tools together in a test project without the use of "automated" generation tools such as CRA with typescript but to learn how everything really works in order to be able to customize the project to the exact need. 
+* I learnt all about these tools previously but wanted to put them to practice, to see how it would work the best, for instance, firing some "strange" (rarely used) events in unit testing like dragging and dropping an image into another container and then testing to see whether if the event succeeded.  
 
 # Usage
 You can start a development server listening on port 3000, execute tests by running npm run test or build a project for production:
