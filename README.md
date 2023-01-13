@@ -1,7 +1,7 @@
 # Introduction
 This is a test Front-end project. 
 This project contains three components written in React just as a test for this specific project.
-As I was learning HTML, CSS, React, TypeScript, Webpack, Git, JavaScript in depth and being completely new to typescript but wishing to use TypeScript with React, I decided to create a project which uses TypeScript for typechecking and compilation, Webpack for project building and Jest for writing tests.
+As I was learning HTML, CSS, React, TypeScript, Webpack, Git, JavaScript in depth and being completely new to typescript but wishing to use TypeScript with React, I decided to create a project which uses TypeScript for typechecking and compilation, Webpack for project building and Jest for writing tests. The goal of the project was thus to configure all of it together in a test project without the use of "automated" generation tools such as CRA with typescript but to learn how everything really works in order to be able to customize the project to the exact need. 
 
 # Usage
 To run a development server:
